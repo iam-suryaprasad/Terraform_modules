@@ -7,7 +7,7 @@ module "prod_compute_1" {
   }
   aws_region           = var.aws_region
   instance_type        = "t2.nano"
-  key_name             = "DevSecOps_Key"
+  key_name             = "Jenkins"
   iam_instance_profile = module.prod_iam_1.instprofile
   public_subnets       = module.prod_vpc_1.public_subnets_id
   private_subnets      = module.prod_vpc_1.private_subnets_id

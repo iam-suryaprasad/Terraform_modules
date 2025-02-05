@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "prod-surya"
+    bucket = "jenkins-prod-surya"
     key    = "functions.tfstate"
     region = "us-east-1"
   }
